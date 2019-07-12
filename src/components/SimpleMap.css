@@ -42,16 +42,26 @@
 }
 
 .categories .category {
-    width: 4vh;
+    width: 5vh;
     height: 1vh;
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 3px;
     border: 0;
-    background: #80c7ff;
-    color: #FAFAFA;
+    background: #FAFAFA;
+    color: #000;
     font-size: 1vh;
     font-weight: bold;
     text-align: center;
     cursor: pointer;
+    transition: .16s ease-in;
+    -webkit-box-shadow: 1px 0px 59px 5px rgba(221,221,221,1);
+    -moz-box-shadow: 1px 0px 59px 5px rgba(221,221,221,1);
+    box-shadow: 1px 0px 59px 5px rgba(221,221,221,1);
     z-index: 10;
+}
+
+.categories .category:hover {
+    background-color: #60A3F2;
+    color: #FAFAFA;
+    height: 2vh;
 }

@@ -26,19 +26,24 @@ class SimpleMap extends Component {
             // Important! Always set the container height explicitly
             [
             <div className="categories">
+                <div className="category">
+                    Cidades
+                </div>
                 <div className="category">Restaurantes</div>
-                <div className="category">Bares</div>
-                <div className="category">Pubs</div>
-                <div className="category">Hotéis</div>
+                <div className="category">Lojas</div>
+                <div className="category">Bares e Cafeterias</div>
+                <div className="category">Hoteis e Pousadas</div>
+                <div className="category">Atrações da Cidade</div>
             </div>,
 
             <div style={{ height: '400px', width: '800px', marginTop: '38px' }}>
                 <GoogleMapReact
-                    bootstrapURLKeys={{ key: 'AIzaSyAkGWCgbnd31w6kYrRZKQOy4VNqZa9JocM' }}
+                    bootstrapURLKeys={{ key: 'AIzaSyDPAmxUyhF4nSB8qBrg16bok1slDysO0gk' }}
                     defaultCenter={this.props.center}
                     defaultZoom={this.props.zoom}
                     options={mapOptions}
                 >
+
                     <AnyReactComponent
                         lat={-9.654459}
                         lng={-35.706921}
